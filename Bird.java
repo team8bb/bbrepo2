@@ -1,3 +1,4 @@
+
 public class Bird {
 
 	int id;
@@ -9,7 +10,7 @@ public class Bird {
 	
 	Bird()
 	{
-		id = -1; //has no proper ID
+		id = -1;
 		name = null;
 		gender = null;
 		home = null;
@@ -20,7 +21,7 @@ public class Bird {
 	Bird(int inputID, Name iName, Gender iGender, Location iLocation, 
 			boolean iInWa, boolean iCanFly)
 	{
-		id.setId(inputID);
+		id = inputID;
 		name = new Name(iName);
 		gender = new Gender(iGender);
 		home = new Location(iLocation);
@@ -33,11 +34,6 @@ public class Bird {
 		return id;
 	}
 	
-	protected int setId(int newId) //Derek was here
-	{
-		id = newId;
-	}
-
 	boolean getCanFly()
 	{
 		return canFly;
